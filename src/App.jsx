@@ -1,4 +1,5 @@
 import { BsFillMoonStarsFill } from "react-icons/bs";
+import { IoMoonOutline, IoSunnyOutline } from "react-icons/io5";
 import { AiFillGithub, AiFillLinkedin, AiFillMail } from "react-icons/ai";
 import { useState } from "react";
 
@@ -21,39 +22,44 @@ function App() {
       <div className={darkMode ? "dark" : ""}>
           <div className="bg-white px-10 text-black md:px-20 lg:px-40 dark:bg-gray-900">
             <section className="min-h-screen">
-                <nav className="py-10 mb-12 flex justify-between">
-                  <h1 className="text-xl font-bold">Jujedev</h1>
+                <nav className="py-10 mb-10 flex justify-between">
+                    <div className="flex">
+                        <h1 className="text-xl font-bold dark:text-white">JUJEDEV</h1>
+                    </div>
                     <ul className="flex items-center">
-                        <li><BsFillMoonStarsFill onClick={() => setDarkMode(!darkMode)} className="cursor-pointer text-2xl"/></li>
+                        {darkMode ? (
+                        <IoSunnyOutline  onClick={() => setDarkMode(!darkMode)} className="text-white cursor-pointer text-2xl" /> )
+                        : 
+                        (<IoMoonOutline onClick={() => setDarkMode(!darkMode)} className="cursor-pointer text-2xl" /> )
+                        }
                         <li>
-                            <a className="bg-gradient-to-b from-cyan-500 to-cyan-600 text-white px-4 py-2 rounded-md ml-8" href="#">Resume</a>
+                            <a className="bg-gradient-to-b from-cyan-500 to-cyan-600 text-white px-4 py-2 rounded-full ml-8" href="#">Mi CV</a>
                         </li>
                       </ul>
                 </nav>
-                <div className="text-center p-10">
-                    <h2 className="text-5xl py-2 text-teal-600 font-bold md:text-6xl">Mauricio Maldonado</h2>
-                    <h3 className="text-2xl py-2 font-bold md:text-3xl">Desarrollador Backend</h3>
-                    <p className="text-md py-5 leading-8 text-gray-800 md:text-xl max-w-lg mx-auto">Hola! Soy un estudiante de Ingenieria en Sistemas de la Información en Universidad Tecnológica Nacional. Me gusta diseñar proyectos propios y estar en constante aprendizaje.</p>
+                <div className="text-center pt-10">
+                    <h2 className="text-5xl py-2 text-teal-600 font-bold md:text-6xl dark:text-teal-400">Mauricio Maldonado</h2>
+                    <h3 className="text-2xl py-2 font-bold md:text-3xl dark:text-white ">Desarrollador Backend</h3>
+                    <p className="text-md py-5 leading-8 text-gray-800 md:text-xl max-w-lg mx-auto dark:text-gray-300">¡Hola! Soy estudiante de Ingeniería en Sistemas de la Información en la Universidad Tecnológica Nacional. Me apasiona diseñar proyectos y aprender constantemente. Aunque me especializo en el desarrollo backend, disfruto aprender sobre React como hobby, con el objetivo de complementar mis habilidades en frontend y backend en el futuro.</p>
                 </div>
-                <div className="text-5xl flex justify-center gap-14 py-3 text-gray-800">
-                    <a className="hover:text-black transition-colors" target={"_blank"} href={"https://github.com/jujedev/"}>
+                <div className="text-5xl flex justify-center gap-14 py-2 text-gray-500 dark:text-gray-600">
+                    <a className="hover:text-black transition-colors dark:hover:text-white" target={"_blank"} href={"https://github.com/jujedev/"}>
                         <AiFillGithub className=""/>
                     </a>
-                    <a className="hover:text-blue-700 transition-colors" target={"_blank"} href={"https://www.linkedin.com/in/m-a-maldonado/"}>
+                    <a className="hover:text-blue-700 transition-colors dark:hover:text-blue-400" target={"_blank"} href={"https://www.linkedin.com/in/m-a-maldonado/"}>
                         <AiFillLinkedin className=""/>
                     </a>
-                    <a className="hover:text-red-700 transition-colors" target={"_blank"} href={"mailto:maurimaldonado6@gmail.com"}>
+                    <a className="hover:text-red-700 transition-colors dark:hover:text-red-400" target={"_blank"} href={"mailto:maurimaldonado6@gmail.com"}>
                         <AiFillMail className=""/>
                     </a>
                 </div>
-                <div
-                    className="relative mx-auto bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 mt-20 overflow-hidden md:h-96 md:w-96">
-                    <ImageComponent src={deved} />
+                <div className="mt-10 w-80 h-80 mx-auto relative rounded-full justify-items-center">
+                    <img src={deved} alt="" className="pt-10 bg-gradient-to-b from-teal-600 to-teal-100 w-80 h-80 rounded-full" style={{objectFit:'fill'}}/>
                 </div>
             </section>
             <section>
                 <div>
-                    <h3 className="text-3xl py-1">Services I offer</h3>
+                    <h3 className="text-3xl pt-10 py-1">Services I offer</h3>
                     <p className="text-md   py-2 leading-8 text-gray-800">
                         Since the beginning of my journey  as a freelance designer and developer, I've done remote work for <span className="text-teal-500">agencies</span>, consulted for <span className="text-teal-500">startups</span>, and collaborated with talented people to create digital products for both business and consumer use.
                     </p>
@@ -104,17 +110,17 @@ function App() {
                     </p>
                 </div>
                 <div className="flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap">
-                    <div className="basis-1/3 flex-1">
-                        <ImageComponent src={web1} height={'100%'} width={'100%'} className="rounded-lg object-cover" />
+                    <div className="rounded-xl basis-1/3 flex-1 hover:shadow-teal-600 shadow-gray-500 shadow-lg transition-shadow">
+                        <ImageComponent src={web1} />
                     </div>
-                    <div className="basis-1/3 flex-1">
-                        <ImageComponent src={web2} className="rounded-lg object-cover" />
+                    <div className="rounded-xl basis-1/3 flex-1 hover:shadow-teal-600 shadow-gray-500 shadow-lg transition-shadow">
+                        <ImageComponent src={web2} />
                     </div>
-                    <div className="basis-1/3 flex-1">
-                        <ImageComponent src={web3} className="rounded-lg object-cover" />
+                    <div className="rounded-xl basis-1/3 flex-1 hover:shadow-teal-600 shadow-gray-500 shadow-lg transition-shadow">
+                        <ImageComponent src={web3} />
                     </div>
-                    <div className="basis-1/3 flex-1">
-                        <ImageComponent src={web4} className="rounded-lg object-cover" />
+                    <div className="rounded-xl basis-1/3 flex-1 hover:shadow-teal-600 shadow-gray-500 shadow-lg transition-shadow">
+                        <ImageComponent src={web4} />
                     </div>
                 </div>
             </section>

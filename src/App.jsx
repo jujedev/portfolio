@@ -35,16 +35,16 @@ function App() {
                     <h3 className="text-2xl py-2 font-bold md:text-3xl">Desarrollador Backend</h3>
                     <p className="text-md py-5 leading-8 text-gray-800 md:text-xl max-w-lg mx-auto">Hola! Soy un estudiante de Ingenieria en Sistemas de la Información en Universidad Tecnológica Nacional. Me gusta diseñar proyectos propios y estar en constante aprendizaje.</p>
                 </div>
-                <div className="text-5xl flex justify-center gap-14 py-3 text-gray-900">
-                    <button>
+                <div className="text-5xl flex justify-center gap-14 py-3 text-gray-800">
+                    <a className="hover:text-black transition-colors" target={"_blank"} href={"https://github.com/jujedev/"}>
                         <AiFillGithub className=""/>
-                    </button>
-                    <button>
+                    </a>
+                    <a className="hover:text-blue-700 transition-colors" target={"_blank"} href={"https://www.linkedin.com/in/m-a-maldonado/"}>
                         <AiFillLinkedin className=""/>
-                    </button>
-                    <button>
+                    </a>
+                    <a className="hover:text-red-700 transition-colors" target={"_blank"} href={"mailto:maurimaldonado6@gmail.com"}>
                         <AiFillMail className=""/>
-                    </button>
+                    </a>
                 </div>
                 <div
                     className="relative mx-auto bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 mt-20 overflow-hidden md:h-96 md:w-96">
@@ -96,7 +96,7 @@ function App() {
             </section>
             <section>
                 <div>
-                    <h3 className="text-3xl py-1">Portfolio</h3>
+                    <h3 className="text-3xl py-1">Proyectos</h3>
                     <p className="text-md   py-2 leading-8 text-gray-800">
                         Since the beginning of my journey as a freelance designer and developer, I've done remote work for <span
                         className="text-teal-500">agencies</span>, consulted for <span className="text-teal-500">startups</span>,
@@ -115,12 +115,6 @@ function App() {
                     </div>
                     <div className="basis-1/3 flex-1">
                         <ImageComponent src={web4} className="rounded-lg object-cover" />
-                    </div>
-                    <div className="basis-1/3 flex-1">
-                        <ImageComponent src={web5} className="rounded-lg object-cover" />
-                    </div>
-                    <div className="basis-1/3 flex-1">
-                        <ImageComponent src={web6} className="rounded-lg object-cover" />
                     </div>
                 </div>
             </section>

@@ -33,7 +33,7 @@ function App() {
             <section className="min-h-screen">
                 <nav className="py-10 mb-10 flex justify-between">
                     <div className="flex">
-                        <h1 className="text-xl font-bold dark:text-white">JUJEDEV</h1>
+                        <h1 className="text-2xl font-bold dark:text-white">JUJEDEV</h1>
                     </div>
                     <ul className="flex items-center">
                         {darkMode ? (
@@ -42,7 +42,7 @@ function App() {
                         (<IoMoonOutline onClick={() => setDarkMode(!darkMode)} className="cursor-pointer text-2xl" /> )
                         }
                         <li>
-                            <a className="bg-gradient-to-b from-cyan-500 to-cyan-600 text-white px-4 py-2 rounded-full ml-8" href="#">Mi CV</a>
+                            <a className="bg-gradient-to-b from-cyan-500 to-cyan-600 text-black px-4 py-2 rounded-full ml-8" target="_blank" href="https://doc-08-1s-prod-01-apps-viewer.googleusercontent.com/viewer2/prod-01/pdf/qldjodnl4ou9l99caao5o55hpa091cu5/kjanb233m829rdnv0motpsl6hph6519g/1730175225000/3/104205631165151212099/APznzabEgZOxydwZu1_aAXQPS6Wjvb0qF1vNqKkXj5VP59GF5DoQhQSSUU8bOx29iQFQrP5SMoDL-43ikoZBRnUGorAOrsKoq_WgbEUUqKxHHA59fkYNBJaEDPXY6I2w728pSlAVDumyy-hj7XzrPUtQSxxlNy7QsKyurMDV5DT6Kb8Cyn2mwdtLyCq0jQs0C6gEOZ5iVIhZuALuOh9p4EtKF8w8XWm48jzdSgBgB24FxN6oHpL4jWTKST5JmyHSVxA85i8sqcYJLzxT3Va1CwtaX0wquPRX3ZR1eyXWoxHJ9BboOqwXEANlM86BHNpOXMUfW2st-UHX8jfUjgIUGzRO-JCXJWWF0BpKgwvd__LGIs3LjsRD8o6V_CdfnwqQzsIGwF5Fy6A_iB9P9fuo15k7ChswtlIddRvg8w-SK1QcjbdJRWFFqhc=?authuser=0&nonce=8v3nq03oj5tja&user=104205631165151212099&hash=fu0kfrr6dh5gae9t3klgv2chiq2s8a45">Ver CV</a>
                         </li>
                       </ul>
                 </nav>

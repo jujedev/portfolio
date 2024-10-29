@@ -1,6 +1,7 @@
 import { IoMoonOutline, IoSunnyOutline } from "react-icons/io5";
 import { AiFillGithub, AiFillLinkedin, AiFillMail } from "react-icons/ai";
 import { useState } from "react";
+import PdfButton from "./components/PdfButton";
 
 import deved from "/dev-ed-wave.png?url";
 import ImageComponent from "./components/Image";
@@ -42,7 +43,7 @@ function App() {
                         (<IoMoonOutline onClick={() => setDarkMode(!darkMode)} className="cursor-pointer text-2xl" /> )
                         }
                         <li>
-                            <a className="bg-gradient-to-b from-cyan-500 to-cyan-600 text-black px-4 py-2 rounded-full ml-8" target="_blank" href="https://doc-08-1s-prod-01-apps-viewer.googleusercontent.com/viewer2/prod-01/pdf/qldjodnl4ou9l99caao5o55hpa091cu5/kjanb233m829rdnv0motpsl6hph6519g/1730175225000/3/104205631165151212099/APznzabEgZOxydwZu1_aAXQPS6Wjvb0qF1vNqKkXj5VP59GF5DoQhQSSUU8bOx29iQFQrP5SMoDL-43ikoZBRnUGorAOrsKoq_WgbEUUqKxHHA59fkYNBJaEDPXY6I2w728pSlAVDumyy-hj7XzrPUtQSxxlNy7QsKyurMDV5DT6Kb8Cyn2mwdtLyCq0jQs0C6gEOZ5iVIhZuALuOh9p4EtKF8w8XWm48jzdSgBgB24FxN6oHpL4jWTKST5JmyHSVxA85i8sqcYJLzxT3Va1CwtaX0wquPRX3ZR1eyXWoxHJ9BboOqwXEANlM86BHNpOXMUfW2st-UHX8jfUjgIUGzRO-JCXJWWF0BpKgwvd__LGIs3LjsRD8o6V_CdfnwqQzsIGwF5Fy6A_iB9P9fuo15k7ChswtlIddRvg8w-SK1QcjbdJRWFFqhc=?authuser=0&nonce=8v3nq03oj5tja&user=104205631165151212099&hash=fu0kfrr6dh5gae9t3klgv2chiq2s8a45">Ver CV</a>
+                            <PdfButton />
                         </li>
                       </ul>
                 </nav>
@@ -69,17 +70,18 @@ function App() {
             <section>
                 <div>
                     <h3 className="text-3xl pt-10 py-1 dark:text-white">Habilidades Técnicas</h3>
-                    <p className="text-md   py-2 leading-8 text-gray-800 dark:text-gray-300">
+                    <hr></hr>
+                    <p className="text-md md:text-xl py-2 leading-8 text-gray-800 dark:text-gray-300">
                     Durante mi trayectoria como <span className="text-teal-500">desarrollador de software</span>, he adquirido habilidades que me permiten desarrollar aplicaciones de manera efectiva. A continuación, destaco algunas de las más relevantes:
                     </p>
                 </div>
                 <div className="lg:flex gap-20">
-                    <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-gray-800 dark:shadow-black">
+                    <div className="basis-1/3 text-center shadow-lg p-10 rounded-xl my-10 dark:bg-gray-800 dark:shadow-black hover:transform-gpu hover:scale-105 hover:transition-transform">
                         <div className="flex justify-center">
                             <ImageComponent src={backend} height={100} width={100} className="" />
                         </div>
                         <h3 className="text-lg font-medium pt-8 pb-2 dark:text-white">Backend</h3>
-                        <p className="py-2 dark:text-gray-300">Creating elegant designs suited for your needs following core design theory</p>
+                        <p className="py-2 dark:text-gray-300">Desarrollo de código robusto, escalable y mantenible.</p>
                         <h4 className="py-4 text-teal-600">Design tools I use</h4>
                         <div className="flex gap-3 pt-4">
                             <div className="flex flex-col items-center basis-1/4">
@@ -100,12 +102,12 @@ function App() {
                             </div>
                         </div>
                     </div>
-                    <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-gray-800 dark:shadow-black">
+                    <div className="basis-1/3 text-center shadow-lg p-10 rounded-xl my-10 dark:bg-gray-800 dark:shadow-black hover:transform-gpu hover:scale-105 hover:transition-transform">
                         <div className="flex justify-center">
                             <ImageComponent src={frontend} height={100} width={100} className="" />
                         </div>
                         <h3 className="text-lg font-medium pt-8 pb-2 dark:text-white">Frontend</h3>
-                        <p className="py-2 dark:text-gray-300">Creating elegant designs suited for your needs following core design theory</p>
+                        <p className="py-2 dark:text-gray-300">Interfaces amigables, diseños responsivos y a medida. Enfocados en la experiencia del usuario.</p>
                         <h4 className="py-4 text-teal-600">Design tools I use</h4>
                         <div className="flex gap-3 pt-4">
                             <div className="flex flex-col items-center basis-1/4">
@@ -126,12 +128,12 @@ function App() {
                             </div>
                         </div>
                     </div>
-                    <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-gray-800 dark:shadow-black">
+                    <div className="basis-1/3 text-center shadow-lg p-10 rounded-xl my-10 dark:bg-gray-800 dark:shadow-black hover:transform-gpu hover:scale-105 hover:transition-transform">
                         <div className="flex justify-center">
                             <ImageComponent src={database} height={100} width={100} className="" />
                         </div>
-                        <h3 className="text-lg font-medium pt-8 pb-2 dark:text-white">Tecnologias y Bases de datos</h3>
-                        <p className="py-2 dark:text-gray-300">Creating elegant designs suited for your needs following core design theory</p>
+                        <h3 className="text-lg font-medium pt-8 pb-2 dark:text-white">Tecnologías y Bases de datos</h3>
+                        <p className="py-2 dark:text-gray-300">Utilizo herramientas para mejorar, optimizar y configurar entornos estables.</p>
                         <h4 className="py-4 text-teal-600">Design tools I use</h4>
                         <div className="flex gap-3 pt-4">
                             <div className="flex flex-col items-center basis-1/4">
@@ -157,7 +159,8 @@ function App() {
             <section>
                 <div>
                     <h3 className="text-3xl py-1 dark:text-white">Proyectos</h3>
-                    <p className="text-md   py-2 leading-8 text-gray-800 dark:text-gray-300">
+                    <hr></hr>
+                    <p className="text-md md:text-xl py-2 leading-8 text-gray-800 dark:text-gray-300">
                     Como desarrollador backend, me apasiona crear software que resuelva problemas cotidianos. Utilizo <span className="text-teal-500">Java</span> para el desarrollo, almacenando información en bases de datos <span className="text-teal-500">MySQL</span>. También tengo experiencia con <span className="text-teal-500">React</span> y <span className="text-teal-500">Tailwind</span>, y próximamente trabajaré con <span className="text-teal-500">Spring&nbsp;boot</span>. Mi objetivo es desarrollar interfaces amigables, así como código bien estructurado y escalable. A continuación, presento una selección de mis trabajos, que reflejan mis conocimientos técnicos y mi compromiso con la calidad del software.
                     </p>
                 </div>

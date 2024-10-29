@@ -86,19 +86,19 @@ function App() {
                         <div className="flex gap-3 pt-4">
                             <div className="flex flex-col items-center basis-1/4">
                                 <img src={java} width={40} height={40} alt="" className="" />
-                                <p className="text-gray-800 dark:text-gray-300 py-1">Java</p>
+                                <p className="text-gray-800 dark:text-gray-300 py-1"><strong>Java</strong></p>
                             </div>
                             <div className="flex flex-col items-center basis-1/4">
                                 <img src={c} width={40} height={40} alt="" />
-                                <p className="text-gray-800 dark:text-gray-300 py-1">C</p>
+                                <p className="text-gray-800 dark:text-gray-300 py-1"><strong>C</strong></p>
                             </div>
                             <div className="flex flex-col items-center basis-1/4">
                                 <img src={python} width={40} height={40} alt="" />
-                                <p className="text-gray-800 dark:text-gray-300 py-1">Python</p>
+                                <p className="text-gray-800 dark:text-gray-300 py-1"><strong>Python</strong></p>
                             </div>
                             <div className="flex flex-col items-center basis-1/4">
                                 <img src={springboot} width={40} height={40} alt="" />
-                                <p className="text-gray-800 dark:text-gray-300 py-1">Spring-boot</p>
+                                <p className="text-gray-800 dark:text-gray-300 py-1"><strong>Spring boot</strong></p>
                             </div>
                         </div>
                     </div>
@@ -112,19 +112,19 @@ function App() {
                         <div className="flex gap-3 pt-4">
                             <div className="flex flex-col items-center basis-1/4">
                                 <img src={html} width={40} height={40} alt="" className="" />
-                                <p className="text-gray-800 dark:text-gray-300 py-1">HTML</p>
+                                <p className="text-gray-800 dark:text-gray-300 py-1"><strong>HTML</strong></p>
                             </div>
                             <div className="flex flex-col items-center basis-1/4">
                                 <img src={css} width={40} height={40} alt="" />
-                                <p className="text-gray-800 dark:text-gray-300 py-1">CSS</p>
+                                <p className="text-gray-800 dark:text-gray-300 py-1"><strong>CSS</strong></p>
                             </div>
                             <div className="flex flex-col items-center basis-1/4">
                                 <img src={javascript} width={40} height={40} alt="" />
-                                <p className="text-gray-800 dark:text-gray-300 py-1">Javascript</p>
+                                <p className="text-gray-800 dark:text-gray-300 py-1"><strong>Javascript</strong></p>
                             </div>
                             <div className="flex flex-col items-center basis-1/4">
                                 <img src={react} width={40} height={40} alt="" />
-                                <p className="text-gray-800 dark:text-gray-300 py-1">React</p>
+                                <p className="text-gray-800 dark:text-gray-300 py-1"><strong>React</strong></p>
                             </div>
                         </div>
                     </div>
@@ -138,19 +138,19 @@ function App() {
                         <div className="flex gap-3 pt-4">
                             <div className="flex flex-col items-center basis-1/4">
                                 <img src={docker} width={40} height={40} alt="" className="" />
-                                <p className="text-gray-800 dark:text-gray-300 py-1">Docker</p>
+                                <p className="text-gray-800 dark:text-gray-300 py-1"><strong>Docker</strong></p>
                             </div>
                             <div className="flex flex-col items-center basis-1/4">
                                 <img src={mysql} width={40} height={40} alt="" />
-                                <p className="text-gray-800 dark:text-gray-300 py-1">MySQL</p>
+                                <p className="text-gray-800 dark:text-gray-300 py-1"><strong>MySQL</strong></p>
                             </div>
                             <div className="flex flex-col items-center basis-1/4">
                                 <img src={tailwind} width={40} height={40} alt="" />
-                                <p className="text-gray-800 dark:text-gray-300 py-1">Tailwind</p>
+                                <p className="text-gray-800 dark:text-gray-300 py-1"><strong>Tailwind</strong></p>
                             </div>
                             <div className="flex flex-col items-center basis-1/4">
                                 <img src={git} width={40} height={40} alt="" />
-                                <p className="text-gray-800 dark:text-gray-300 py-1">Git</p>
+                                <p className="text-gray-800 dark:text-gray-300 py-1"><strong>Git</strong></p>
                             </div>
                         </div>
                     </div>

@@ -1,19 +1,28 @@
-import { BsFillMoonStarsFill } from "react-icons/bs";
 import { IoMoonOutline, IoSunnyOutline } from "react-icons/io5";
 import { AiFillGithub, AiFillLinkedin, AiFillMail } from "react-icons/ai";
 import { useState } from "react";
 
 import deved from "/dev-ed-wave.png?url";
-import design from "/design.png?url";
-import code from "/code.png?url";
-import consulting from "/consulting.png?url";
 import ImageComponent from "./components/Image";
+import backend from "/backend.svg";
+import frontend from "/frontend.svg";
+import database from "/database.svg";
+import java from "/java.svg";
+import c from "/c.svg";
+import python from "/python.svg";
+import springboot from "/spring_boot.svg";
+import html from "/html.svg";
+import css from "/css.svg";
+import javascript from "/javascript.svg";
+import react from "/react.svg";
+import docker from "/docker.svg";
+import mysql from "/mysql.svg";
+import tailwind from "/tailwind.svg";
+import git from "/git.svg";
 import web1 from "/web1.png?url";
 import web2 from "/web2.png?url";
 import web3 from "/web3.png?url";
 import web4 from "/web4.png?url";
-import web5 from "/web5.png?url";
-import web6 from "/web6.png?url";
 
 
 function App() {
@@ -59,67 +68,110 @@ function App() {
             </section>
             <section>
                 <div>
-                    <h3 className="text-3xl pt-10 py-1">Services I offer</h3>
-                    <p className="text-md   py-2 leading-8 text-gray-800">
-                        Since the beginning of my journey  as a freelance designer and developer, I've done remote work for <span className="text-teal-500">agencies</span>, consulted for <span className="text-teal-500">startups</span>, and collaborated with talented people to create digital products for both business and consumer use.
+                    <h3 className="text-3xl pt-10 py-1 dark:text-white">Habilidades Técnicas</h3>
+                    <p className="text-md   py-2 leading-8 text-gray-800 dark:text-gray-300">
+                    Durante mi trayectoria como <span className="text-teal-500">desarrollador de software</span>, he adquirido habilidades que me permiten desarrollar aplicaciones de manera efectiva. A continuación, destaco algunas de las más relevantes:
                     </p>
                 </div>
                 <div className="lg:flex gap-20">
-                    <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white">
+                    <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-gray-800 dark:shadow-black">
                         <div className="flex justify-center">
-                            <ImageComponent src={design} height={100} width={100} className="" />
+                            <ImageComponent src={backend} height={100} width={100} className="" />
                         </div>
-                        <h3 className="text-lg font-medium pt-8 pb-2">Beautiful Design</h3>
-                        <p className="py-2">Creating elegant designs suited for your needs following core design theory</p>
+                        <h3 className="text-lg font-medium pt-8 pb-2 dark:text-white">Backend</h3>
+                        <p className="py-2 dark:text-gray-300">Creating elegant designs suited for your needs following core design theory</p>
                         <h4 className="py-4 text-teal-600">Design tools I use</h4>
-                        <p className="text-gray-800 py-1">Photoshop</p>
-                        <p className="text-gray-800 py-1">Illustrator</p>
-                        <p className="text-gray-800 py-1">Figma</p>
+                        <div className="flex gap-3 pt-4">
+                            <div className="flex flex-col items-center basis-1/4">
+                                <img src={java} width={40} height={40} alt="" className="" />
+                                <p className="text-gray-800 dark:text-gray-300 py-1">Java</p>
+                            </div>
+                            <div className="flex flex-col items-center basis-1/4">
+                                <img src={c} width={40} height={40} alt="" />
+                                <p className="text-gray-800 dark:text-gray-300 py-1">C</p>
+                            </div>
+                            <div className="flex flex-col items-center basis-1/4">
+                                <img src={python} width={40} height={40} alt="" />
+                                <p className="text-gray-800 dark:text-gray-300 py-1">Python</p>
+                            </div>
+                            <div className="flex flex-col items-center basis-1/4">
+                                <img src={springboot} width={40} height={40} alt="" />
+                                <p className="text-gray-800 dark:text-gray-300 py-1">Spring-boot</p>
+                            </div>
+                        </div>
                     </div>
-                    <div className="text-center shadow-lg p-10 rounded-xl my-10">
+                    <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-gray-800 dark:shadow-black">
                         <div className="flex justify-center">
-                            <ImageComponent src={consulting} height={100} width={100} className="" />
+                            <ImageComponent src={frontend} height={100} width={100} className="" />
                         </div>
-                        <h3 className="text-lg font-medium pt-8 pb-2">Beautiful Design</h3>
-                        <p className="py-2">Creating elegant designs suited for your needs following core design theory</p>
+                        <h3 className="text-lg font-medium pt-8 pb-2 dark:text-white">Frontend</h3>
+                        <p className="py-2 dark:text-gray-300">Creating elegant designs suited for your needs following core design theory</p>
                         <h4 className="py-4 text-teal-600">Design tools I use</h4>
-                        <p className="text-gray-800 py-1">Photoshop</p>
-                        <p className="text-gray-800 py-1">Illustrator</p>
-                        <p className="text-gray-800 py-1">Figma</p>
+                        <div className="flex gap-3 pt-4">
+                            <div className="flex flex-col items-center basis-1/4">
+                                <img src={html} width={40} height={40} alt="" className="" />
+                                <p className="text-gray-800 dark:text-gray-300 py-1">HTML</p>
+                            </div>
+                            <div className="flex flex-col items-center basis-1/4">
+                                <img src={css} width={40} height={40} alt="" />
+                                <p className="text-gray-800 dark:text-gray-300 py-1">CSS</p>
+                            </div>
+                            <div className="flex flex-col items-center basis-1/4">
+                                <img src={javascript} width={40} height={40} alt="" />
+                                <p className="text-gray-800 dark:text-gray-300 py-1">Javascript</p>
+                            </div>
+                            <div className="flex flex-col items-center basis-1/4">
+                                <img src={react} width={40} height={40} alt="" />
+                                <p className="text-gray-800 dark:text-gray-300 py-1">React</p>
+                            </div>
+                        </div>
                     </div>
-                    <div className="text-center shadow-lg p-10 justify-items-center items-center rounded-xl my-10">
+                    <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-gray-800 dark:shadow-black">
                         <div className="flex justify-center">
-                            <ImageComponent src={code} height={100} width={100} className="" />
+                            <ImageComponent src={database} height={100} width={100} className="" />
                         </div>
-                        <h3 className="text-lg font-medium pt-8 pb-2">Beautiful Design</h3>
-                        <p className="py-2">Creating elegant designs suited for your needs following core design theory</p>
+                        <h3 className="text-lg font-medium pt-8 pb-2 dark:text-white">Tecnologias y Bases de datos</h3>
+                        <p className="py-2 dark:text-gray-300">Creating elegant designs suited for your needs following core design theory</p>
                         <h4 className="py-4 text-teal-600">Design tools I use</h4>
-                        <p className="text-gray-800 py-1">Photoshop</p>
-                        <p className="text-gray-800 py-1">Illustrator</p>
-                        <p className="text-gray-800 py-1">Figma</p>
+                        <div className="flex gap-3 pt-4">
+                            <div className="flex flex-col items-center basis-1/4">
+                                <img src={docker} width={40} height={40} alt="" className="" />
+                                <p className="text-gray-800 dark:text-gray-300 py-1">Docker</p>
+                            </div>
+                            <div className="flex flex-col items-center basis-1/4">
+                                <img src={mysql} width={40} height={40} alt="" />
+                                <p className="text-gray-800 dark:text-gray-300 py-1">MySQL</p>
+                            </div>
+                            <div className="flex flex-col items-center basis-1/4">
+                                <img src={tailwind} width={40} height={40} alt="" />
+                                <p className="text-gray-800 dark:text-gray-300 py-1">Tailwind</p>
+                            </div>
+                            <div className="flex flex-col items-center basis-1/4">
+                                <img src={git} width={40} height={40} alt="" />
+                                <p className="text-gray-800 dark:text-gray-300 py-1">Git</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </section>
             <section>
                 <div>
-                    <h3 className="text-3xl py-1">Proyectos</h3>
-                    <p className="text-md   py-2 leading-8 text-gray-800">
-                        Since the beginning of my journey as a freelance designer and developer, I've done remote work for <span
-                        className="text-teal-500">agencies</span>, consulted for <span className="text-teal-500">startups</span>,
-                        and collaborated with talented people to create digital products for both business and consumer use.
+                    <h3 className="text-3xl py-1 dark:text-white">Proyectos</h3>
+                    <p className="text-md   py-2 leading-8 text-gray-800 dark:text-gray-300">
+                    Como desarrollador backend, me apasiona crear software que resuelva problemas cotidianos. Utilizo <span className="text-teal-500">Java</span> para el desarrollo, almacenando información en bases de datos <span className="text-teal-500">MySQL</span>. También tengo experiencia con <span className="text-teal-500">React</span> y <span className="text-teal-500">Tailwind</span>, y próximamente trabajaré con <span className="text-teal-500">Spring&nbsp;boot</span>. Mi objetivo es desarrollar interfaces amigables, así como código bien estructurado y escalable. A continuación, presento una selección de mis trabajos, que reflejan mis conocimientos técnicos y mi compromiso con la calidad del software.
                     </p>
                 </div>
                 <div className="flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap">
-                    <div className="rounded-xl basis-1/3 flex-1 hover:shadow-teal-600 shadow-gray-500 shadow-lg transition-shadow">
+                    <div className="rounded-xl basis-1/3 flex-1 hover:shadow-gray-800 shadow-gray-500 shadow-lg transition-shadow">
                         <ImageComponent src={web1} />
                     </div>
-                    <div className="rounded-xl basis-1/3 flex-1 hover:shadow-teal-600 shadow-gray-500 shadow-lg transition-shadow">
+                    <div className="rounded-xl basis-1/3 flex-1 hover:shadow-gray-800 shadow-gray-500 shadow-lg transition-shadow">
                         <ImageComponent src={web2} />
                     </div>
-                    <div className="rounded-xl basis-1/3 flex-1 hover:shadow-teal-600 shadow-gray-500 shadow-lg transition-shadow">
+                    <div className="rounded-xl basis-1/3 flex-1 hover:shadow-gray-800 shadow-gray-500 shadow-lg transition-shadow">
                         <ImageComponent src={web3} />
                     </div>
-                    <div className="rounded-xl basis-1/3 flex-1 hover:shadow-teal-600 shadow-gray-500 shadow-lg transition-shadow">
+                    <div className="rounded-xl basis-1/3 flex-1 hover:shadow-gray-800 shadow-gray-500 shadow-lg transition-shadow">
                         <ImageComponent src={web4} />
                     </div>
                 </div>

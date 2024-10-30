@@ -11,7 +11,7 @@ import database from "/database.svg";
 import java from "/java.svg";
 import c from "/c.svg";
 import python from "/python.svg";
-import springboot from "/spring_boot.svg";
+import springboot from "/springboot.svg";
 import html from "/html.svg";
 import css from "/css.svg";
 import javascript from "/javascript.svg";
@@ -82,7 +82,7 @@ function App() {
                         </div>
                         <h3 className="text-lg font-medium pt-8 pb-2 dark:text-white">Backend</h3>
                         <p className="py-2 dark:text-gray-300">Desarrollo de código robusto, escalable y mantenible.</p>
-                        <h4 className="py-4 text-teal-600">Design tools I use</h4>
+                        <h4 className="py-4 text-teal-600">Lenguajes, librerias y frameworks usados</h4>
                         <div className="flex gap-3 pt-4">
                             <div className="flex flex-col items-center basis-1/4">
                                 <img src={java} width={40} height={40} alt="" className="" />
@@ -108,7 +108,7 @@ function App() {
                         </div>
                         <h3 className="text-lg font-medium pt-8 pb-2 dark:text-white">Frontend</h3>
                         <p className="py-2 dark:text-gray-300">Interfaces amigables, diseños responsivos y a medida. Enfocados en la experiencia del usuario.</p>
-                        <h4 className="py-4 text-teal-600">Design tools I use</h4>
+                        <h4 className="py-4 text-teal-600">Lenguajes, librerias y frameworks usados</h4>
                         <div className="flex gap-3 pt-4">
                             <div className="flex flex-col items-center basis-1/4">
                                 <img src={html} width={40} height={40} alt="" className="" />
@@ -134,7 +134,7 @@ function App() {
                         </div>
                         <h3 className="text-lg font-medium pt-8 pb-2 dark:text-white">Tecnologías y Bases de datos</h3>
                         <p className="py-2 dark:text-gray-300">Utilizo herramientas para mejorar, optimizar y configurar entornos estables.</p>
-                        <h4 className="py-4 text-teal-600">Design tools I use</h4>
+                        <h4 className="py-4 text-teal-600">Lenguajes, librerias y frameworks usados</h4>
                         <div className="flex gap-3 pt-4">
                             <div className="flex flex-col items-center basis-1/4">
                                 <img src={docker} width={40} height={40} alt="" className="" />

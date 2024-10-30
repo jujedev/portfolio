@@ -2,6 +2,7 @@ import { IoMoonOutline, IoSunnyOutline } from "react-icons/io5";
 import { AiFillGithub, AiFillLinkedin, AiFillMail } from "react-icons/ai";
 import { useState } from "react";
 import PdfButton from "./components/PdfButton";
+import SkillsCard from "./components/SkillsCard";
 
 import deved from "/dev-ed-wave.png?url";
 import ImageComponent from "./components/Image";
@@ -76,84 +77,35 @@ function App() {
                     </p>
                 </div>
                 <div className="lg:flex gap-20">
-                    <div className="basis-1/3 text-center shadow-lg p-10 rounded-xl my-10 dark:bg-gray-800 dark:shadow-black hover:transform-gpu hover:scale-105 hover:transition-transform">
-                        <div className="flex justify-center">
-                            <ImageComponent src={backend} height={100} width={100} className="" />
-                        </div>
-                        <h3 className="text-lg font-medium pt-8 pb-2 dark:text-white">Backend</h3>
-                        <p className="py-2 dark:text-gray-300">Desarrollo de código robusto, escalable y mantenible.</p>
-                        <h4 className="py-4 text-teal-600">Lenguajes, librerias y frameworks usados</h4>
-                        <div className="flex gap-3 pt-4">
-                            <div className="flex flex-col items-center basis-1/4">
-                                <img src={java} width={40} height={40} alt="" className="" />
-                                <p className="text-gray-800 dark:text-gray-300 py-1"><strong>Java</strong></p>
-                            </div>
-                            <div className="flex flex-col items-center basis-1/4">
-                                <img src={c} width={40} height={40} alt="" />
-                                <p className="text-gray-800 dark:text-gray-300 py-1"><strong>C</strong></p>
-                            </div>
-                            <div className="flex flex-col items-center basis-1/4">
-                                <img src={python} width={40} height={40} alt="" />
-                                <p className="text-gray-800 dark:text-gray-300 py-1"><strong>Python</strong></p>
-                            </div>
-                            <div className="flex flex-col items-center basis-1/4">
-                                <img src={springboot} width={40} height={40} alt="" />
-                                <p className="text-gray-800 dark:text-gray-300 py-1"><strong>Spring boot</strong></p>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="basis-1/3 text-center shadow-lg p-10 rounded-xl my-10 dark:bg-gray-800 dark:shadow-black hover:transform-gpu hover:scale-105 hover:transition-transform">
-                        <div className="flex justify-center">
-                            <ImageComponent src={frontend} height={100} width={100} className="" />
-                        </div>
-                        <h3 className="text-lg font-medium pt-8 pb-2 dark:text-white">Frontend</h3>
-                        <p className="py-2 dark:text-gray-300">Interfaces amigables, diseños responsivos y a medida. Enfocados en la experiencia del usuario.</p>
-                        <h4 className="py-4 text-teal-600">Lenguajes, librerias y frameworks usados</h4>
-                        <div className="flex gap-3 pt-4">
-                            <div className="flex flex-col items-center basis-1/4">
-                                <img src={html} width={40} height={40} alt="" className="" />
-                                <p className="text-gray-800 dark:text-gray-300 py-1"><strong>HTML</strong></p>
-                            </div>
-                            <div className="flex flex-col items-center basis-1/4">
-                                <img src={css} width={40} height={40} alt="" />
-                                <p className="text-gray-800 dark:text-gray-300 py-1"><strong>CSS</strong></p>
-                            </div>
-                            <div className="flex flex-col items-center basis-1/4">
-                                <img src={javascript} width={40} height={40} alt="" />
-                                <p className="text-gray-800 dark:text-gray-300 py-1"><strong>Javascript</strong></p>
-                            </div>
-                            <div className="flex flex-col items-center basis-1/4">
-                                <img src={react} width={40} height={40} alt="" />
-                                <p className="text-gray-800 dark:text-gray-300 py-1"><strong>React</strong></p>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="basis-1/3 text-center shadow-lg p-10 rounded-xl my-10 dark:bg-gray-800 dark:shadow-black hover:transform-gpu hover:scale-105 hover:transition-transform">
-                        <div className="flex justify-center">
-                            <ImageComponent src={database} height={100} width={100} className="" />
-                        </div>
-                        <h3 className="text-lg font-medium pt-8 pb-2 dark:text-white">Tecnologías y Bases de datos</h3>
-                        <p className="py-2 dark:text-gray-300">Utilizo herramientas para mejorar, optimizar y configurar entornos estables.</p>
-                        <h4 className="py-4 text-teal-600">Lenguajes, librerias y frameworks usados</h4>
-                        <div className="flex gap-3 pt-4">
-                            <div className="flex flex-col items-center basis-1/4">
-                                <img src={docker} width={40} height={40} alt="" className="" />
-                                <p className="text-gray-800 dark:text-gray-300 py-1"><strong>Docker</strong></p>
-                            </div>
-                            <div className="flex flex-col items-center basis-1/4">
-                                <img src={mysql} width={40} height={40} alt="" />
-                                <p className="text-gray-800 dark:text-gray-300 py-1"><strong>MySQL</strong></p>
-                            </div>
-                            <div className="flex flex-col items-center basis-1/4">
-                                <img src={tailwind} width={40} height={40} alt="" />
-                                <p className="text-gray-800 dark:text-gray-300 py-1"><strong>Tailwind</strong></p>
-                            </div>
-                            <div className="flex flex-col items-center basis-1/4">
-                                <img src={git} width={40} height={40} alt="" />
-                                <p className="text-gray-800 dark:text-gray-300 py-1"><strong>Git</strong></p>
-                            </div>
-                        </div>
-                    </div>
+                    <SkillsCard 
+                        logo={[backend, "Backend"]}
+                        titulo={"Desarrollo de código robusto, escalable y mantenible."}
+                        subtitulo={"Lenguajes, librerias y frameworks usados"}
+                        skill1={[java, "Java"]}
+                        skill2={[c, "C"]}
+                        skill3={[python, "Python"]}
+                        skill4={[springboot, "Spring boot"]}
+                    />
+
+                    <SkillsCard 
+                        logo={[frontend, "Frontend"]}
+                        titulo={"Interfaces amigables, diseños responsivos y a medida. Enfocados en la experiencia del usuario."}
+                        subtitulo={"Lenguajes, librerias y frameworks usados"}
+                        skill1={[html, "HTML"]}
+                        skill2={[css, "CSS"]}
+                        skill3={[javascript, "Javascript"]}
+                        skill4={[react, "React"]}
+                    />
+
+                    <SkillsCard 
+                        logo={[database, "Tecnologías y Bases de datos"]}
+                        titulo={"Utilizo herramientas para mejorar, optimizar y configurar entornos estables."}
+                        subtitulo={"Lenguajes, librerias y frameworks usados"}
+                        skill1={[docker, "Docker"]}
+                        skill2={[mysql, "MySQL"]}
+                        skill3={[tailwind, "Tailwind CSS"]}
+                        skill4={[git, "Git"]}
+                    />
                 </div>
             </section>
             <section>

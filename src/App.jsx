@@ -3,6 +3,7 @@ import { AiFillGithub, AiFillLinkedin, AiFillMail } from "react-icons/ai";
 import { useState } from "react";
 import PdfButton from "./components/PdfButton";
 import SkillsCard from "./components/SkillsCard";
+import ProjectCard from "./components/ProjectCard";
 
 import deved from "/dev-ed-wave.png?url";
 import ImageComponent from "./components/Image";
@@ -117,18 +118,7 @@ function App() {
                     </p>
                 </div>
                 <div className="flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap">
-                    <div className="rounded-xl basis-1/3 flex-1 hover:shadow-gray-800 shadow-gray-500 shadow-lg transition-shadow">
-                        <ImageComponent src={web1} />
-                    </div>
-                    <div className="rounded-xl basis-1/3 flex-1 hover:shadow-gray-800 shadow-gray-500 shadow-lg transition-shadow">
-                        <ImageComponent src={web2} />
-                    </div>
-                    <div className="rounded-xl basis-1/3 flex-1 hover:shadow-gray-800 shadow-gray-500 shadow-lg transition-shadow">
-                        <ImageComponent src={web3} />
-                    </div>
-                    <div className="rounded-xl basis-1/3 flex-1 hover:shadow-gray-800 shadow-gray-500 shadow-lg transition-shadow">
-                        <ImageComponent src={web4} />
-                    </div>
+                    <ProjectCard image={web2} />
                 </div>
             </section>
           </div>

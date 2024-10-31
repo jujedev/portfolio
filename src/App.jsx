@@ -34,7 +34,7 @@ function App() {
       <div className={darkMode ? "dark" : ""}>
           <div className="bg-white px-10 text-black md:px-20 lg:px-40 dark:bg-gray-900">
             <section className="min-h-screen">
-                <nav className="py-10 mb-10 flex justify-between">
+                <nav className="py-10 mb-5 flex justify-between">
                     <div className="flex">
                         <h1 className="text-2xl font-bold dark:text-white">JUJEDEV</h1>
                     </div>
@@ -49,7 +49,7 @@ function App() {
                         </li>
                       </ul>
                 </nav>
-                <div className="text-center pt-10">
+                <div className="text-center pt-5">
                     <h2 className="text-5xl py-2 text-teal-600 font-bold md:text-6xl dark:text-teal-400">Mauricio Maldonado</h2>
                     <h3 className="text-2xl py-2 font-bold md:text-3xl dark:text-white ">Desarrollador Backend</h3>
                     <p className="text-md py-5 leading-8 text-gray-800 md:text-xl max-w-lg mx-auto dark:text-gray-300">¡Hola! Soy estudiante de Ingeniería en Sistemas de la Información en la Universidad Tecnológica Nacional. Me apasiona diseñar proyectos y aprender constantemente. Aunque me especializo en el desarrollo backend, disfruto aprender sobre React como hobby, con el objetivo de complementar mis habilidades en frontend y backend en el futuro.</p>
@@ -118,7 +118,10 @@ function App() {
                     </p>
                 </div>
                 <div className="flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap">
+                    <ProjectCard image={web1} />
                     <ProjectCard image={web2} />
+                    <ProjectCard image={web3} />
+                    <ProjectCard image={web4} />
                 </div>
             </section>
           </div>

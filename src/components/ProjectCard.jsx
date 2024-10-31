@@ -1,12 +1,12 @@
 import React from 'react';
-import ImageComponent from './Image';
 import { AiFillGithub, AiFillChrome } from "react-icons/ai";
+import PropTypes from 'prop-types';
 
 const ProjectCard = ({image}) => {
     return (
-        <div className='rounded-xl relative inline-block bg-gray-700 hover:shadow-gray-800 hover:shadow-lg shadow-gray-500 shadow-lg transition-shadow hover:transform-gpu hover:scale-100 hover:transition-all hover:opacity-100 group'>
-            <div className="basis-1/3 flex-1 group-hover:opacity-80">
-                <img src={image} className="rounded-xl" />
+        <div className='basis-1/3 flex-1 rounded-xl relative inline-block bg-gray-700 hover:shadow-gray-800 hover:shadow-lg shadow-gray-500 shadow-lg transition-shadow hover:transform-gpu hover:scale-100 hover:transition-all hover:opacity-100 group'>
+            <div className="group-hover:opacity-80">
+                <img src={image} className="rounded-xl" style={{objectFit:'contain'}}/>
             </div>
             <div className="absolute inset-0 group-hover:bg-gradient-to-t group-hover:from-gray-100 group-hover:to-transparent rounded-xl"></div>
             <div className='absolute bottom-2 left-1/2 transform -translate-x-1/2 space-x-6 flex '>
@@ -19,6 +19,10 @@ const ProjectCard = ({image}) => {
             </div>
         </div>
     )
+};
+
+ProjectCard.defaultProps = {
+    image: PropTypes.string.isRequired,
 };
 
 export default ProjectCard;

@@ -77,7 +77,7 @@ function App() {
                     Durante mi trayectoria como <span className="text-teal-500">desarrollador de software</span>, he adquirido habilidades que me permiten desarrollar aplicaciones de manera efectiva. A continuación, destaco algunas de las más relevantes:
                     </p>
                 </div>
-                <div className="lg:flex gap-20">
+                <div className="lg:flex gap-3">
                     <SkillsCard 
                         logo={[backend, "Backend"]}
                         titulo={"Desarrollo de código robusto, escalable y mantenible."}

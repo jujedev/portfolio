@@ -11,20 +11,20 @@ const SkillsCard = ({ logo, titulo, subtitulo, skill1, skill2, skill3, skill4}) 
             <h3 className="text-lg font-medium pt-8 pb-2 dark:text-white">{logo[1]}</h3>
             <p className="py-2 dark:text-gray-300">{titulo}</p>
             <h4 className="py-4 text-teal-600">{subtitulo}</h4>
-            <div className="flex gap-3 pt-4">
-                <div className="flex flex-col items-center basis-1/4">
+            <div className="flex flex-wrap gap-3 pt-4 justify-between">
+                <div className="flex flex-col items-center basis-1/5">
                     <img src={skill1[0]} width={40} height={40} alt="" className="" />
                     <p className="text-gray-800 dark:text-gray-300 py-1"><strong>{skill1[1]}</strong></p>
                 </div>
-                <div className="flex flex-col items-center basis-1/4">
+                <div className="flex flex-col items-center basis-1/5">
                     <img src={skill2[0]} width={40} height={40} alt="" />
                     <p className="text-gray-800 dark:text-gray-300 py-1"><strong>{skill2[1]}</strong></p>
                 </div>
-                <div className="flex flex-col items-center basis-1/4">
+                <div className="flex flex-col items-center basis-1/5">
                     <img src={skill3[0]} width={40} height={40} alt="" />
                     <p className="text-gray-800 dark:text-gray-300 py-1"><strong>{skill3[1]}</strong></p>
                 </div>
-                <div className="flex flex-col items-center basis-1/4">
+                <div className="flex flex-col items-center basis-1/5">
                     <img src={skill4[0]} width={40} height={40} alt="" />
                     <p className="text-gray-800 dark:text-gray-300 py-1"><strong>{skill4[1]}</strong></p>
                 </div>
